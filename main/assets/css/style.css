@@ -1,0 +1,9 @@
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: lightcyan;
+  box-shadow: 0 10px 40px;
+}

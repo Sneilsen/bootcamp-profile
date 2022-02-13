@@ -1,2 +1,0 @@
-# bootcamp-profile
-profile page
