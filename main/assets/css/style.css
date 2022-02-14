@@ -1,9 +1,176 @@
-header nav {
+ /* top header */
+
+header {
+  padding: 15px 10% 15px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: lightcyan;
-  box-shadow: 0 10px 40px;
+  background-color: grey;
+  
+}
+
+header h1 {
+  color: black;
+   padding: 0px 5px;
+  margin: 0;
+  font-size: 10;
+  line-height: 1;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: antiquewhite;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: antiquewhite;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: black;
+}
+
+/* banner image */
+
+.banner {
+  background-image: url("../images/IMG_1716.jpg");
+  background-size: cover;
+  background-position: center;
+  font-style: italic;
+  color: antiquewhite;
+  min-height: 300px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+
+.main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.main p  {
+  font-size: 20px;
+  margin: 50px;
+}
+/* flex container */
+.section  {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.flex-item  {
+  border: 5px solid ;
+  color: black;
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 30px);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 10px;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 10px;
+}
+
+
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+  background-color: gray;
+}
+
+.flex-item h3 {
+  font-size: 25px;
+}
+.flex-item span  {
+  font-size: 25px;
+}
+
+/* project images */
+
+.run-buddy {
+  background-image: url("../images/run-buddy.jpg");
+}
+
+.new-home {
+  background-image: url("../images/new-home-4083239_1280.jpeg");
+}
+
+.cranes {
+  background-image: url("../images/cranes.jpg");
+}
+
+.sign {
+  background-image: url("../images/cranes.jpg");
+}
+
+.street {
+  background-image: url("../images/new-home-4083239_1280.jpeg");
+}
+/* contact */
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  font-style: normal;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: red;
+}
+/* media query */
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+ 
+}
+.footer {
+  background-color: grey;
 }
